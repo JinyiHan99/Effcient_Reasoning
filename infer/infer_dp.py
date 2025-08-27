@@ -23,11 +23,11 @@ def save_list_to_jsonl(data_list, file_path):
             f.write(json.dumps(item, ensure_ascii=False) + '\n')
 
 DATA_PATH_MAP = {
-    "gsm": "/data2/hanjin1/data/gsm/gsm8k_test_cleaned.jsonl",
-    "aime24": "/data2/hanjin1/data/aime/aime24_test_cleaned.jsonl",
-    "math500": "/data2/hanjin1/data/math/math500_test_cleaned.jsonl",
-    "gpqa": "/data2/hanjin1/data/gpqa/gpqa_diamond_cleaned.jsonl",
-    "aime25": "/data2/hanjin1/data/aime/aime2025_cleaned.jsonl",
+    # "gsm": "/data2/hanjin1/data/gsm/gsm8k_test_cleaned.jsonl",
+    "aime24": "/mnt/data/kw/hjy/Effcient_Reasoning/fast_slow_test_data/aime24_cleaned.jsonl",
+    "math500": "/mnt/data/kw/hjy/Effcient_Reasoning/fast_slow_test_data/math500_test_cleaned.jsonl",
+    "gpqa": "/mnt/data/kw/hjy/Effcient_Reasoning/fast_slow_test_data/gpqa_diamond_test_cleaned.jsonl",
+    # "aime25": "/data2/hanjin1/data/aime/aime2025_cleaned.jsonl",
 }
 
 def make_normal_prompt_fn_ckp(example, tokenizer):
